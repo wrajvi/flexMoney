@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: #7F00FF;
+  background-color: #CFFFDC;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+img {
+  max-width: 100%; /* Adjusted for responsiveness */
+  height: auto;
+}
+.yoga{
+  font-size: larger;
+  font-weight: 600;
+}
+.App {
+  min-height: 100vh;
+  width: 85vw;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f6f6f6;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.navbar-menu-container {
+  display: none;
+}
+.nav-logo-container{
+  font-size: 150%;
+  font-family: Nanum Gothic Coding;
+}
+
+.navbar-links-container a {
+  margin-right: 1.5rem; /* Adjusted for better spacing */
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem; /* Adjusted for better sizing */
+  background-color: #E0B0FF;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem; /* Adjusted for better sizing */
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  display: inline-block; /* Ensure the button is an inline-block element */
+  line-height: 1;
+}
+
+.navbar-cart-icon {
+  font-size: 1.2rem; /* Adjusted for better sizing */
+}
+
+.primary-button:hover {
+  background-color: #BF40BF;
+}
+
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.home-image-section {
+  max-width: 100%; /* Adjusted for responsiveness */
+  flex: 1;
+}
+
+.home-banner-container {
+  position: relative;
+  display: flex;
+  padding-top: 3rem;
+}
+
+.home-bannerImage-container {
+  position: absolute;
+  top: -100px;
+  right: -170px;
+  z-index: -2;
+  max-width: 700px;
+}
+
+.home-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Adjusted for better responsiveness */
+  color: brown; 
+  max-width: 100%; /* Adjusted for responsiveness */
+}
+
+
+.primary-text {
+  font-size: medium;
+  margin: 10%;
+  max-width: 100%; /* Adjusted for responsiveness */
+  color: brown; 
+  margin: 1rem 0; /* Adjusted for better spacing */
+}
+
+.secondary-button {
+  padding: 0.8rem 2rem;
+  background-color: #E0B0FF;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 25px;
+  /* margin-left: 150px; */
+}
+.btn-primary{
+  display: inline-block; /* Ensure the link is an inline-block element */
+  padding: 0.9rem 1.75rem;
+  background-color:#E0B0FF;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none; /* Remove the default underline for links */
+  color: brown; /* Set the text color for the link */
+  transition: 0.2s;
+}
+
+.secondary-button svg {
+  margin-left: 0.5rem; /* Adjusted for better spacing */
+  font-size: 1.2rem; /* Adjusted for better sizing */
+}
+
+.secondary-button:hover {
+  background-color: #BF40BF;
+}
+
+/* Registration Page */
+.card-div {
+  background: lightblue;
+}
+
+.input-div {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.input-out-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+p {
+  width: -webkit-fill-available;
+  color: brown;
+}
+
+.container-div {
+width: 50%;
+}
+
+.container {
+display: flex;
+justify-content: center;
+color: brown; 
+}
+
+.error {
+color: red;
+}
+
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+.info {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+}
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+.hide {
+  display: none;
+}
+
+.modal-mess{
+  color: green;
+}
+
+@media (max-width: 1000px) {
+  .navbar-links-container a {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .primary-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 300px; /* Adjusted for better sizing */
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-menu-container {
+    display: flex;
+  }
+  .home-bannerImage-container {
+    max-width: 100%; /* Adjusted for responsiveness */
+  }
+  .home-banner-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-image-section {
+    width: 100%;
+    max-width: 100%; /* Adjusted for responsiveness */
+  }
+  .primary-heading {
+    text-align: center;
+    max-width: 90%;
+  }
+  .primary-text {
+    text-align: center;
+    max-width: 80%;
+  }
+  .home-text-section {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; /* Adjusted for better spacing */
+  }
+  .secondary-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem; /* Adjusted for better sizing */
+    cursor: pointer;
+  }
+
+  .App {
+    max-width: 95vw;
+  }
+}

@@ -7,8 +7,6 @@ https://sarthakfm.vercel.app/
 
 Given below is the ER diagram which shows the schema for my database,
 
-![er-yoga](https://github.com/curio-7/flexMoney/assets/77585810/174d4cc5-6ca5-4dd8-bbeb-29155d277271)
-
 ## ScreenShots:-
 
 # HomePage:
